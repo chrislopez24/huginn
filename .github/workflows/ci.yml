@@ -1,9 +1,9 @@
-name: CI
+name: CI MultiArch
 
 on:
   push:
   pull_request:
-
+  
 jobs:
   run-tests:
     name: ${{ matrix.os }} ruby-${{ matrix.ruby }} ${{ matrix.database_adapter }}
